@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./charging.css">
+    <!-- Jquery link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <title>Charging</title>
+</head>
+<body>
+    <h1>Charging Calculator</h1>
+    <div id="container">
+        <div id="list">    
+            <h3>Patient Name</h3>
+            <input id ="patient" type="text"><br><br>
+            <table>
+                <tr>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                </tr>
+                <tr>
+                    <td class="item">Sliding sheet blue</td>
+                    <td class = "pound">&pound; 4.99</td>
+                    <td> <input type="number" class ="quantity" min="0" max="10" placeholder="0"></td>
+                </tr>
+                <tr>
+                    <td class="item">Gown standard</td>
+                    <td class = "pound">&pound; 6.99</td>
+                    <td> <input  type="number" class = "quantity" min="0" max="10" placeholder="0"></td>       
+                </tr>
+                <tr>
+                    <td class="item">Slipper</td>
+                    <td class = "pound">&pound; 3.99</td>
+                    <td> <input  type="number" class = "quantity" min="0" max="10" placeholder="0"></td>    
+                </tr>
+                <tr>
+                    <td class="item">Specimen Container</td>
+                    <td class = "pound">&pound; 1.99</td>
+                    <td> <input  type="number" class = "quantity" min="0" max="10" placeholder="0"></td>
+                </tr>
+                <tr>
+                    <td class="item">Bandage elastoplast</td>
+                    <td class = "pound">&pound; 1.29</td>
+                    <td> <input  type="number" class = "quantity" min="0" max="10" placeholder="0"></td>
+                </tr>
+                <tr>
+                    <td class="item">Dressing pack</td>
+                    <td class = "pound">&pound; 4.50</td>
+                    <td> <input  type="number" class = "quantity" min="0" max="10" placeholder="0"></td>
+                </tr>
+                <tr>
+                    <td class="item">Stocking Thigh</td>
+                    <td class = "pound">&pound; 5.99</td>
+                    <td> <input  type="number" class = "quantity" min="0" max="10" placeholder="0"></td>
+                </tr>
+                <tr>
+                    <td class="item">Vomit bag emesis</td>
+                    <td class = "pound">&pound; 0.50</td>
+                    <td> <input  type="number" class = "quantity" min="0" max="10" placeholder="0"></td>
+                </tr>
+                <tr>
+                    <td class="item">Nasal Bolster</td>
+                    <td class = "pound">&pound; 1.20</td>
+                    <td> <input  type="number" class = "quantity" min="0" max="10" placeholder="0"></td>
+                </tr>
+                <tr>
+                    <td class="item">MRSA swabs</td>
+                    <td class = "pound">&pound; 0.99</td>
+                    <td> <input  type="number" class = "quantity" min="0" max="10" placeholder="0"></td>
+                </tr>
+            </table>
+            <!-- Calling function -->
+            <button id="btn1" onclick="Charging()"> Enter </button>
+            <button id="btn2" onclick="Reset()">Next Patient</button>
+        </div> 
+         <!--Display result  -->
+        <div id="total_price">
+            <section id="result">
+                <div id="name"></div>
+                <div id="text"></div>
+                <div id="total"></div>
+            </section>
+        </div>
+    </div>
+</body>
+<!-- Link to Javascript -->
+<script src="charging.js"></script>
+</html>

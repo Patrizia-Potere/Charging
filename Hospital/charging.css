@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+   --mywhite:rgb(255,255,255); 
+   --blue:rgb(179,217,255);
+   --hover:rgb(0,134,179)
+}
+
+html,body {
+    min-height: 100%;
+}
+
+body {
+background-image: url('theatre.jpg'); 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height:100%;
+    margin: 0;
+}
+
+h1 {
+    background-color: var(--blue);
+    text-align: center;
+    margin:0;
+    padding:18px;
+}
+/* Container of table and price list */
+#container {
+    display:flex;
+    width:100%;
+    flex-wrap: wrap;
+}
+/* list of item with price and total */
+#list {
+    width:500px;
+    margin:0px 40px;
+}
+
+#result {
+    display:none;
+    width:300px;
+    background-color: var(--blue);
+    height: 350px;
+    margin-top:120px;
+    margin-left:100px;
+    position:relative;
+}
+/* display name of patient in final result */
+#name {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin:20px;
+    padding:20px;
+    border-bottom: 2px solid black;
+}
+/* list of item per patient */
+#text {
+    font-size: 18px;
+    font-weight: bold;
+    margin:10px;
+}
+/* total price */
+#total {
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+    position:absolute;
+    left:100px;
+    bottom:10px;
+    border-top:2px solid black;
+}
+
+#list h3 {
+    width:50%;
+    background-color: var(--blue);
+    padding:8px;
+}
+/* button to call function */
+#btn1, #btn2 {
+    background-color: var(--blue);
+    border:none;
+    padding:10px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#btn1:hover, #btn2:hover {
+    background-color: var(--hover);
+}
+
+#patient {
+    width:50%;
+}
+
+th {
+    background-color: var(--blue);
+    height:35px;
+    font-weight: bold;
+    padding:5px;
+}
+.item, .pound, input {
+    background-color: var(--mywhite);
+    height:30px;
+    font-weight: bold;
+}
+/* display of item to buy */
+.item{
+    width:50%;
+    text-align: center;
+}
+/* display of price */
+.pound {
+    width:30%;
+    text-align: right;
+    padding-right: 10px;
+}
+
+input {
+    border:none;
+    width: 100%;
+}
+/*Media query for responsive  */
+@media (max-width:960px) {
+    #result {margin:80px 20px 50px 40px}
+}
+
